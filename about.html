@@ -1,11 +1,10 @@
-<!-- index.html -->
+<!-- about.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>About Me</title>
     <style>
         /* Make the image fill the entire screen */
         body, html {
@@ -16,8 +15,8 @@
 
         .hero {
             /* Background image */
-            background-image: url('images/Space-Background-Images-1024x682.jpg'); /* your image path */
-            background-size: cover; /* make it fill the whole page */
+            background-image: url('images/Space-Background-Images-1024x682.jpg'); /* same image as index.html */
+            background-size: cover; /* cover whole page */
             background-position: center;
             background-repeat: no-repeat;
             height: 100%;
@@ -37,13 +36,13 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: rgba(0, 0, 0, 0.5); /* adjust opacity as needed */
+            background-color: rgba(0, 0, 0, 0.6); /* dark overlay */
             z-index: 1;
         }
 
         .hero-content {
             position: relative;
-            z-index: 2; /* ensure text is above overlay */
+            z-index: 2; /* make text appear above overlay */
             max-width: 800px;
             padding: 20px;
         }
@@ -53,18 +52,25 @@
             margin-bottom: 20px;
         }
 
+        h2 {
+            font-size: 2em;
+            margin-top: 20px;
+        }
+
         p {
             font-size: 1.2em;
+            margin-bottom: 1em;
+            line-height: 1.6;
         }
 
-        a {
-            color: #FFD700;
-            text-decoration: none;
+        a.email-link {
+            color: #FFD700; /* highlight email in gold */
             font-weight: bold;
+            text-decoration: underline;
         }
 
-        a:hover {
-            text-decoration: underline;
+        a.email-link:hover {
+            color: #FFA500;
         }
     </style>
 </head>
@@ -72,9 +78,23 @@
 
     <div class="hero">
         <div class="hero-content">
-            <h1>Welcome to My Website!</h1>
-            <p>This is a simple static website hosted on GitHub Pages.</p>
-            <p><a href="about.html">About Page</a></p>
+            <h1>About Me</h1>
+
+            <h2>Hello!</h2>
+            <p>
+                Welcome to my About Page. Here, you can learn more about me, my work, and my passions.
+            </p>
+
+            <h2>Background</h2>
+            <p>
+                I am a tech enthusiast who loves building projects and exploring new technologies. I enjoy solving problems and continuously learning to improve my skills.
+            </p>
+
+            <h2>Contact</h2>
+            <p>
+                Feel free to reach out to me at 
+                <a href="mailto:luffy69monkeyd@gmail.com" class="email-link">luffy69monkeyd@gmail.com</a>.
+            </p>
         </div>
     </div>
 
